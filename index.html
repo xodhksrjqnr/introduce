@@ -4,37 +4,19 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="나를 소개하는 개인 포트폴리오 페이지" />
-    <title>My Profile | Portfolio</title>
+    <meta name="description" content="포트폴리오 페이지" />
+    <title>Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
 </head>
 <body>
 
 <header class="header">
-    <a href="#home" class="logo">MY PROFILE.</a>
+    <a href="#about" class="logo">MY PROFILE</a>
     <span class="header-label">PERSONAL PORTFOLIO</span>
 </header>
 
 <main>
-    <!-- HOME -->
-    <section id="home" class="section hero">
-        <div class="hero-content">
-            <span class="eyebrow">WELCOME TO MY SPACE</span>
-            <h1>
-                Hello,<br />
-                I'm <span class="highlight">Your Name.</span>
-            </h1>
-            <p class="hero-description">
-                안녕하세요. 저를 소개하는 개인 페이지입니다.<br />
-                제가 좋아하는 것과 경험, 그리고 앞으로의 목표를 소개합니다.
-            </p>
-            <a href="#about" class="text-link">MORE ABOUT ME ↗</a>
-        </div>
-
-        <div class="hero-number">01 / 04</div>
-    </section>
-
     <!-- ABOUT -->
     <section id="about" class="section">
         <div class="section-heading">
@@ -44,11 +26,11 @@
 
         <div class="content-grid">
             <div class="profile-placeholder">
-                <span>YOUR PHOTO</span>
+                <span><img src="./image/me.jpeg" alt="증명사진"></span>
             </div>
 
             <div class="about-content">
-                <h3>반갑습니다.<br />저는 Your Name입니다.</h3>
+                <h3>반갑습니다.<br/>저는 김태완입니다.</h3>
                 <p>
                     이곳에 자신에 대한 소개를 작성해주세요.
                     현재 하고 있는 일, 관심 분야, 가치관 등을
@@ -56,19 +38,36 @@
                 </p>
 
                 <div class="info-list">
-                    <div><span>NAME</span><strong>Your Name</strong></div>
-                    <div><span>JOB</span><strong>Developer / Designer</strong></div>
-                    <div><span>LOCATION</span><strong>Seoul, Korea</strong></div>
-                    <div><span>EMAIL</span><strong>your@email.com</strong></div>
+                    <div><span>Experience</span><strong>Backend Developer, 3 years</strong></div>
+                    <div><span>Education</span><strong>Computer Engineering, Chungbuk National University</strong></div>
+                    <div><span>Location</span><strong>Seoul, Korea</strong></div>
+                    <div><span>Phone</span><strong>010-8425-7696</strong></div>
+                    <div><span>Email</span><strong>xodhks789@gmail.com</strong></div>
+                    <div><span>Github</span><strong><a href="https://github.com/xodhksrjqnr" target="_blank" rel="noopener noreferrer">GitHub ↗</a></strong></div>
+                    <div><span>LinkedIn</span><strong><a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></strong></div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- CAREER -->
+    <section id="career" class="section">
+        <div class="section-heading">
+            <span class="eyebrow">02 — CAREER</span>
+            <h2>Work Experience</h2>
+        </div>
+
+        <div>
+            <ul>
+                <li>엘리시아</li>
+            </ul>
         </div>
     </section>
 
     <!-- SKILLS -->
     <section id="skills" class="section">
         <div class="section-heading">
-            <span class="eyebrow">02 — SKILLS</span>
+            <span class="eyebrow">03 — SKILLS</span>
             <h2>What I Do</h2>
         </div>
 
@@ -85,64 +84,32 @@
 
             <article class="info-card">
                 <span class="card-number">02</span>
-                <h3>Design</h3>
-                <p>직관적이고 깔끔한 디자인과 사용자 경험에 관심이 있습니다.</p>
-            </article>
-
-            <article class="info-card">
-                <span class="card-number">03</span>
                 <h3>Planning</h3>
                 <p>아이디어를 구체적인 결과물로 만들어가는 과정을 좋아합니다.</p>
             </article>
-        </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="section">
-        <div class="section-heading">
-            <span class="eyebrow">03 — CONTACT</span>
-            <h2>Let's Connect.</h2>
-        </div>
-
-        <p class="contact-description">
-            저에 대해 더 궁금한 점이 있다면<br />
-            언제든 편하게 연락해주세요.
-        </p>
-
-        <a href="mailto:your@email.com" class="contact-link">
-            your@email.com ↗
-        </a>
-
-        <div class="social-links">
-            <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
-            <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
         </div>
     </section>
 </main>
 
 <!-- FIXED NAVIGATION -->
 <nav class="side-nav" aria-label="페이지 메뉴">
-    <a href="#home" class="nav-item active">
-        <span class="nav-dot"></span>
-        <span class="nav-label">Home</span>
-    </a>
     <a href="#about" class="nav-item">
         <span class="nav-dot"></span>
         <span class="nav-label">About</span>
+    </a>
+    <a href="#career" class="nav-item">
+        <span class="nav-dot"></span>
+        <span class="nav-label">Career</span>
     </a>
     <a href="#skills" class="nav-item">
         <span class="nav-dot"></span>
         <span class="nav-label">Skills</span>
     </a>
-    <a href="#contact" class="nav-item">
-        <span class="nav-dot"></span>
-        <span class="nav-label">Contact</span>
-    </a>
 </nav>
 
 <footer class="footer">
-    <span>© 2026 YOUR NAME.</span>
-    <span>DESIGNED WITH SIMPLICITY.</span>
+    <span>© 2026 Kim Taewan</span>
+    <span>DESIGNED WITH ChatGPT.</span>
 </footer>
 
 </body>
